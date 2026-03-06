@@ -38,11 +38,11 @@ POST http://localhost:3000/api/productos
 Content-Type: application/json
 
 {
-    "nombre": "Arepa con Queso",
-    "descripcion": "Arepa tradicional con queso costeño",
-    "precio": 8000,
+    "nombre": "Italian pizza",
+    "descripcion": "pizza italiana familiar con champiñones, aceitunas y queso rallado",
+    "precio": 25000,
     "stock": 50,
-    "imagen": "https://example.com/arepa.jpg"
+    "imagen": "https://example.com/hamburgesa.jpg"
 }
 
 ### Actualizar producto existente

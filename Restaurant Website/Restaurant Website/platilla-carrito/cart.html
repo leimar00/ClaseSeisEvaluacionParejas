@@ -87,46 +87,7 @@
                                         </tr>
                                     </thead>
                                     <tbody id="carrito-items">
-                                        <tr>
-                                            <td class="product-block">
-                                                <a href="#" class="remove-from-cart-btn"><i class="fa-solid fa-x"></i></a>
-                                                <img src="images/b1.png" alt="">
-                                                <a href="product-detail.html" class="h6">Crunch Grillhouse Burger</a>
-                                            </td>
-                                            <td>    
-                                                <p class="lead color-black">$240.00</p>
-                                            </td>
-                                            <td>
-                                                <div class="quantity quantity-wrap">
-                                                    <div class="decrement"><i class="fa-solid fa-minus"></i></div>
-                                                    <input type="text" name="quantity" value="1" maxlength="2" size="1" class="number">
-                                                    <div class="increment"><i class="fa-solid fa-plus"></i></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h6>$240.00</h6>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-block">
-                                                <a href="#" class="remove-from-cart-btn"><i class="fa-solid fa-x"></i></i></a>
-                                                <img src="images/b2.png" alt="">
-                                                <a href="product-detail.html" class="h6">Sizzle Snap Burgers</a>
-                                            </td>
-                                            <td>
-                                                <p class="lead color-black">$240.00</p>
-                                            </td>
-                                            <td>
-                                                <div class="quantity quantity-wrap">
-                                                    <div class="decrement"><i class="fa-solid fa-minus"></i></div>
-                                                    <input type="text" name="quantity" value="1" maxlength="2" size="1" class="number">
-                                                    <div class="increment"><i class="fa-solid fa-plus"></i></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h6>$240.00</h6>
-                                            </td>
-                                        </tr>
+                                        <!-- Los items del carrito se cargarán aquí dinámicamente -->
                                     </tbody>
                                 </table>
                             </div>
@@ -253,24 +214,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-        let btnDecrement = document.querySelectorAll(".decrement i");
-        let btnIncrement = document.querySelectorAll(".increment i");
-        let countProduct = document.querySelectorAll(".quantity input.number");
-        btnIncrement.forEach((btnI, pos)=>{
-            btnI.addEventListener('click', () => {
-                const currentValue = parseInt(countProduct[pos].value);
-                countProduct[pos].value = currentValue + 1;
-            });
-        })
-        btnDecrement.forEach((btnD, pos)=>{
-            btnD.addEventListener('click', () => {
-                const currentValue = parseInt(countProduct[pos].value);
-                if (currentValue > 1) {
-                    countProduct[pos].value = currentValue - 1;
-                }
-            })  
-        });
-    </script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
