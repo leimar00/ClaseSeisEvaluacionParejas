@@ -788,3 +788,18 @@ input[type=date], input[type=text], input[type=email], input[type=file], input[t
     width: 200px !important;
     background-color: rgba(107, 106, 106, 0.183);
 }
+
+
+/*nuevo css*/
+
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+    }
+}
+
+/* Esto asegura que el puntero cambie a "manito" para indicar que es un link */
+.dropdown-toggle {
+    cursor: pointer;
+}

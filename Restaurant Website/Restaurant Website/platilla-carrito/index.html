@@ -28,52 +28,44 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" id="first-child">Home</a>
+            <a class="nav-link active" aria-current="page" href="../platilla-carrito/index.html" id="first-child">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Burger</a>
+            <a class="nav-link" href="../platilla-carrito/index.html#burger">Burger</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Other
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffc800;">
-              <li><a class="dropdown-item" href="#">Pizza</a></li>
-              <li><a class="dropdown-item" href="#">Fries</a></li>
-              <li><a class="dropdown-item" href="#">Fried Chicken</a></li>
-            </ul>
+   <a class="nav-link dropdown-toggle" href="../platilla-carrito/index.html#Other" role="button">
+      Other
+   </a>
+   <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="../platilla-carrito/index.html#Pizza">Pizza</a></li>
+      <li><a class="dropdown-item" href="../platilla-carrito/index.html#Fries">Fries</a></li>
+      <li><a class="dropdown-item" href="../platilla-carrito/index.html#FriedChicken">Fried Chicken</a></li>
+   </ul>
+</li>
+          <li class="nav-item">
+            <a class="nav-link" href="../platilla-carrito/index.html#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="../platilla-carrito/index.html#contact">Contact Us</a>
           </li>
         </ul>
         
         <form class="d-flex">
           <div class="icons">
+            <a href="">
             <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="../platilla-carrito/cart.html" style="color: black;">
             <div class="carrito">
               <i class="fa-solid fa-cart-shopping"></i>
               <span class="contar-pro">0</span>
             </div>
+            </a>
           </div>
         </form>
       </div>
     </div>
-    <table class="table list-cart">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Imagen</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Precio</th>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
   </nav>
   <div class="home-section">
     <!-- home content -->
@@ -289,7 +281,7 @@
 
 
   <!-- banner -->
-  <div class="banner">
+  <div class="banner" id="Other">
     <h3>Other Product</h3>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, voluptatibus?</p>
     <button id="btnorder">Order Now</button>
@@ -332,7 +324,7 @@
   <div class="container" id="burger">
     <div class="row" style="margin-top: 30px;">
       <div class="col-md-3 py-3 py-md-0">
-        <div class="card producto" data-id="9" data-price="6.50" data-name="Italian Pizza" data-image="./images/p1.png">
+        <div id="Pizza" class="card producto" data-id="9" data-price="6.50" data-name="Italian Pizza" data-image="./images/p1.png">
           <img src="./images/p1.png" alt="">
           <div class="card-body">
             <h3>Italian Pizza</h3>
@@ -342,7 +334,7 @@
         </div>
       </div>
       <div class="col-md-3 py-3 py-md-0">
-        <div class="card producto" data-id="10" data-price="20.30" data-name="Fried Chicken" data-image="./images/p2.png">
+        <div id="FriedChicken" class="card producto" data-id="10" data-price="20.30" data-name="Fried Chicken" data-image="./images/p2.png">
           <img src="./images/p2.png" alt="">
           <div class="card-body">
             <h3>Fried Chicken</h3>
@@ -352,7 +344,7 @@
         </div>
       </div>
       <div class="col-md-3 py-3 py-md-0">
-        <div class="card producto" data-id="11" data-price="1.20" data-name="Tasty Fries" data-image="./images/p3.png">
+        <div id="Fries" class="card producto" data-id="11" data-price="1.20" data-name="Tasty Fries" data-image="./images/p3.png">
           <img src="./images/p3.png" alt="">
           <div class="card-body">
             <h3>Tasty Fries</h3>
@@ -456,11 +448,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="../platilla-carrito/index.html">Home</a></li>
+              <li><a href="../platilla-carrito/index.html#about">About</a></li>
+              <li><a href="../platilla-carrito/index.html#contact">Contact</a></li>
               <li><a href="#">Services</a></li>
-              <li><a href="#">Privacy policay</a></li>
+              <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
           
@@ -468,9 +460,9 @@
             <h4>Our Services</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aperiam.</p>
             <ul>
-              <li><a href="#">Pizza</a></li>
-              <li><a href="#">Fried chicken</a></li>
-              <li><a href="#">Fries</a></li>
+              <li><a href="../platilla-carrito/index.html#Pizza">Pizza</a></li>
+              <li><a href="../platilla-carrito/index.html#FriedChicken">Fried chicken</a></li>
+              <li><a href="../platilla-carrito/index.html#Fries">Fries</a></li>
             </ul>
           </div>
           
